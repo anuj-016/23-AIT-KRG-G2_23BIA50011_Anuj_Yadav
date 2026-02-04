@@ -13,7 +13,7 @@ function App() {
         <>
         <Header />
         <Routes>
-            <Route path = "/Login" element = {<Login/>} />
+            <Route path = "/login" element = {<Login/>} />
             <Route path = "/" 
             element = {
                 <ProtectedRoute>
@@ -36,5 +36,6 @@ function App() {
         </>
     )
 }
+
 
 export default App;
