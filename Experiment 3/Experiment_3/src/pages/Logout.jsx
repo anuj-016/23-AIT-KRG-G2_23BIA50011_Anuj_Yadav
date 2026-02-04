@@ -2,12 +2,12 @@ import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 
 const Logout = () => {
-    const { setAuthenticated } = useAuth();   
+    const { setIsAuthenticated } = useAuth();   
     const navigate = useNavigate(); 
 
     const handleLogout = () => {
         
-        setAuthenticated(false);
+        setIsAuthenticated(false);
         navigate("/login");
     };
 
